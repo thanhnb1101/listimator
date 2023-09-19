@@ -7,6 +7,8 @@ class ImageConstant {
 
   static String imgLocation = '$imagePath/img_location.svg';
 
+  static String imgImage2 = '$imagePath/img_image2.png';
+
   static String imgNotification = '$imagePath/img_notification.svg';
 
   static String imgOverflowmenuPrimary =
@@ -19,15 +21,18 @@ class ImageConstant {
   // GroceryChecked images
   static String imgCheckmark = '$imagePath/img_checkmark.svg';
 
-  static String imgOverflowmenu = '$imagePath/img_overflowmenu.svg';
-
   static String imgCheckmarkPrimary = '$imagePath/img_checkmark_primary.svg';
 
-  // GroceryChecked - Tab Container images
-  static String imgPlusPrimary = '$imagePath/img_plus_primary.svg';
+  // GroceryUnchecked images
+  static String imgCheckboxoutlineblank =
+      '$imagePath/img_checkboxoutlineblank.svg';
 
   // Common images
+  static String imgOverflowmenu = '$imagePath/img_overflowmenu.svg';
+
   static String imgArrowleft = '$imagePath/img_arrowleft.svg';
+
+  static String imgPlusPrimary = '$imagePath/img_plus_primary.svg';
 
   static String imageNotFound = 'assets/images/image_not_found.png';
 }

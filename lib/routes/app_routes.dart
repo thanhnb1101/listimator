@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:listimator/presentation/listimator_screen/listimator_screen.dart';
 import 'package:listimator/presentation/grocerychecked_tab_container_screen/grocerychecked_tab_container_screen.dart';
+import 'package:listimator/presentation/groceryunchecked_screen/groceryunchecked_screen.dart';
 import 'package:listimator/presentation/additems_screen/additems_screen.dart';
 import 'package:listimator/presentation/app_navigation_screen/app_navigation_screen.dart';
 
@@ -12,6 +13,8 @@ class AppRoutes {
   static const String grocerycheckedTabContainerScreen =
       '/grocerychecked_tab_container_screen';
 
+  static const String groceryuncheckedScreen = '/groceryunchecked_screen';
+
   static const String additemsScreen = '/additems_screen';
 
   static const String appNavigationScreen = '/app_navigation_screen';
@@ -20,6 +23,7 @@ class AppRoutes {
     listimatorScreen: (context) => ListimatorScreen(),
     grocerycheckedTabContainerScreen: (context) =>
         GrocerycheckedTabContainerScreen(),
+    groceryuncheckedScreen: (context) => GroceryuncheckedScreen(),
     additemsScreen: (context) => AdditemsScreen(),
     appNavigationScreen: (context) => AppNavigationScreen()
   };

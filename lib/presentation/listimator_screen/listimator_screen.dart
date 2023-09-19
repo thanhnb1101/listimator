@@ -20,32 +20,50 @@ class ListimatorScreen extends StatelessWidget {
     return SafeArea(
       child: Scaffold(
         appBar: CustomAppBar(
-          height: 43.v,
+          height: 47.v,
           leadingWidth: 58.h,
           leading: AppbarImage(
             imagePath: ImageConstant.imgImage1,
             margin: EdgeInsets.only(
               left: 20.h,
-              top: 5.v,
-              bottom: 5.v,
+              top: 7.v,
+              bottom: 7.v,
             ),
           ),
-          title: AppbarImage1(
-            svgPath: ImageConstant.imgLocation,
-            margin: EdgeInsets.only(left: 19.h),
+          title: Padding(
+            padding: EdgeInsets.only(left: 38.h),
+            child: Row(
+              children: [
+                AppbarImage1(
+                  svgPath: ImageConstant.imgLocation,
+                  margin: EdgeInsets.only(
+                    top: 7.v,
+                    bottom: 16.v,
+                  ),
+                ),
+                AppbarImage1(
+                  imagePath: ImageConstant.imgImage2,
+                  margin: EdgeInsets.only(left: 37.h),
+                ),
+              ],
+            ),
           ),
           actions: [
             AppbarImage2(
               svgPath: ImageConstant.imgNotification,
               margin: EdgeInsets.only(
-                left: 27.h,
+                left: 28.h,
                 top: 11.v,
-                right: 8.h,
+                right: 12.h,
               ),
             ),
             AppbarImage2(
               svgPath: ImageConstant.imgOverflowmenuPrimary,
-              margin: EdgeInsets.fromLTRB(25.h, 9.v, 35.h, 2.v),
+              margin: EdgeInsets.only(
+                left: 44.h,
+                top: 11.v,
+                right: 40.h,
+              ),
             ),
           ],
         ),
