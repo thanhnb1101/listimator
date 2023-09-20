@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:listimator/core/app_export.dart';
 import 'package:listimator/widgets/custom_checkbox_button.dart';
+import 'package:listimator/widgets/grocery_item.dart';
+import 'package:listimator/widgets/grocery_listview.dart';
 
 // ignore_for_file: must_be_immutable
 class GrocerycheckedPage extends StatefulWidget {
@@ -15,7 +17,7 @@ class GrocerycheckedPage extends StatefulWidget {
 
 class GrocerycheckedPageState extends State<GrocerycheckedPage>
     with AutomaticKeepAliveClientMixin<GrocerycheckedPage> {
-  bool chipsvalue = false;
+  bool chipsvalue = true;
 
   bool chocolatesvalue = false;
 
@@ -24,11 +26,14 @@ class GrocerycheckedPageState extends State<GrocerycheckedPage>
   bool biscuitsvalue = false;
 
   bool saltvalue = false;
+  GroceryItemView chips = GroceryItemView(itemName: "Chips", itemValue: "Rs 200", valueCheck: false);
+  GroceryItemView salt = GroceryItemView(itemName: "Salts", itemValue: "Rs 90", valueCheck: true);
 
   @override
   bool get wantKeepAlive => true;
   @override
   Widget build(BuildContext context) {
+    super.build(context);
     mediaQueryData = MediaQuery.of(context);
 
     return SafeArea(
@@ -56,174 +61,7 @@ class GrocerycheckedPageState extends State<GrocerycheckedPage>
                             AppDecoration.outlineOnPrimaryContainer.copyWith(
                           borderRadius: BorderRadiusStyle.roundedBorder15,
                         ),
-                        child: Column(
-                          mainAxisSize: MainAxisSize.min,
-                          children: [
-                            Padding(
-                              padding: EdgeInsets.only(left: 8.h),
-                              child: Row(
-                                mainAxisAlignment: MainAxisAlignment.center,
-                                children: [
-                                  CustomCheckboxButton(
-                                    text: "Chips",
-                                    value: chipsvalue,
-                                    padding:
-                                        EdgeInsets.symmetric(vertical: 1.v),
-                                    onChange: (value) {
-                                      chipsvalue = value;
-                                    },
-                                  ),
-                                  Spacer(),
-                                  Padding(
-                                    padding: EdgeInsets.only(top: 2.v),
-                                    child: Text(
-                                      "Rs 200",
-                                      style: theme.textTheme.bodyLarge,
-                                    ),
-                                  ),
-                                  CustomImageView(
-                                    svgPath: ImageConstant.imgOverflowmenu,
-                                    height: 24.adaptSize,
-                                    width: 24.adaptSize,
-                                  ),
-                                ],
-                              ),
-                            ),
-                            Padding(
-                              padding: EdgeInsets.only(
-                                left: 8.h,
-                                top: 20.v,
-                              ),
-                              child: Row(
-                                mainAxisAlignment: MainAxisAlignment.center,
-                                children: [
-                                  CustomCheckboxButton(
-                                    text: "Chocolates",
-                                    value: chocolatesvalue,
-                                    padding:
-                                        EdgeInsets.symmetric(vertical: 1.v),
-                                    onChange: (value) {
-                                      chocolatesvalue = value;
-                                    },
-                                  ),
-                                  Spacer(),
-                                  Padding(
-                                    padding: EdgeInsets.only(top: 2.v),
-                                    child: Text(
-                                      "Rs 100",
-                                      style: theme.textTheme.bodyLarge,
-                                    ),
-                                  ),
-                                  CustomImageView(
-                                    svgPath: ImageConstant.imgOverflowmenu,
-                                    height: 24.adaptSize,
-                                    width: 24.adaptSize,
-                                    margin: EdgeInsets.only(left: 2.h),
-                                  ),
-                                ],
-                              ),
-                            ),
-                            Padding(
-                              padding: EdgeInsets.only(
-                                left: 8.h,
-                                top: 20.v,
-                              ),
-                              child: Row(
-                                mainAxisAlignment: MainAxisAlignment.center,
-                                children: [
-                                  CustomCheckboxButton(
-                                    text: "Coffee",
-                                    value: coffeevalue,
-                                    padding:
-                                        EdgeInsets.symmetric(vertical: 2.v),
-                                    onChange: (value) {
-                                      coffeevalue = value;
-                                    },
-                                  ),
-                                  Spacer(),
-                                  Padding(
-                                    padding: EdgeInsets.only(top: 2.v),
-                                    child: Text(
-                                      "Rs 20",
-                                      style: theme.textTheme.bodyLarge,
-                                    ),
-                                  ),
-                                  CustomImageView(
-                                    svgPath: ImageConstant.imgOverflowmenu,
-                                    height: 24.adaptSize,
-                                    width: 24.adaptSize,
-                                  ),
-                                ],
-                              ),
-                            ),
-                            Padding(
-                              padding: EdgeInsets.only(
-                                left: 8.h,
-                                top: 20.v,
-                              ),
-                              child: Row(
-                                mainAxisAlignment: MainAxisAlignment.center,
-                                children: [
-                                  CustomCheckboxButton(
-                                    text: "Biscuits",
-                                    value: biscuitsvalue,
-                                    padding:
-                                        EdgeInsets.symmetric(vertical: 1.v),
-                                    onChange: (value) {
-                                      biscuitsvalue = value;
-                                    },
-                                  ),
-                                  Spacer(),
-                                  Padding(
-                                    padding: EdgeInsets.only(top: 2.v),
-                                    child: Text(
-                                      "Rs 250",
-                                      style: theme.textTheme.bodyLarge,
-                                    ),
-                                  ),
-                                  CustomImageView(
-                                    svgPath: ImageConstant.imgOverflowmenu,
-                                    height: 24.adaptSize,
-                                    width: 24.adaptSize,
-                                  ),
-                                ],
-                              ),
-                            ),
-                            Padding(
-                              padding: EdgeInsets.only(
-                                left: 8.h,
-                                top: 20.v,
-                              ),
-                              child: Row(
-                                mainAxisAlignment: MainAxisAlignment.center,
-                                children: [
-                                  CustomCheckboxButton(
-                                    text: "Salt",
-                                    value: saltvalue,
-                                    padding:
-                                        EdgeInsets.symmetric(vertical: 1.v),
-                                    onChange: (value) {
-                                      saltvalue = value;
-                                    },
-                                  ),
-                                  Spacer(),
-                                  Padding(
-                                    padding: EdgeInsets.only(top: 2.v),
-                                    child: Text(
-                                      "Rs 90",
-                                      style: theme.textTheme.bodyLarge,
-                                    ),
-                                  ),
-                                  CustomImageView(
-                                    svgPath: ImageConstant.imgOverflowmenu,
-                                    height: 24.adaptSize,
-                                    width: 24.adaptSize,
-                                  ),
-                                ],
-                              ),
-                            ),
-                          ],
-                        ),
+                        child: SizedBox(height: 200.v, child: GroceryListView()),
                       ),
                       Padding(
                         padding: EdgeInsets.only(

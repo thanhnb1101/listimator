@@ -1,12 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:listimator/core/app_export.dart';
-import 'package:listimator/widgets/listimator_widget.dart';
+import 'package:listimator/widgets/listimator_listview.dart';
 import 'package:listimator/widgets/app_bar/appbar_image.dart';
 import 'package:listimator/widgets/app_bar/appbar_image_1.dart';
 import 'package:listimator/widgets/app_bar/appbar_image_2.dart';
 import 'package:listimator/widgets/app_bar/custom_app_bar.dart';
-import 'package:listimator/widgets/custom_elevated_button.dart';
-import 'package:listimator/widgets/custom_outlined_button.dart';
 import 'dart:developer' as dev;
 
 class ListimatorScreen extends StatefulWidget {
@@ -191,75 +189,10 @@ class ListimatorScreenState extends State<ListimatorScreen>
                             child: TabBarView(
                                 controller: tabviewController,
                                 children: [
-                                  ListimatorWidget(),
-                                  ListimatorWidget()
+                                  ListimatorListView(),
+                                  ListimatorListView()
                                 ]))
                       ])),
-              // Padding(
-              //   padding: EdgeInsets.only(
-              //     top: 18.v,
-              //     right: 7.h,
-              //   ),
-              //   child: Row(
-              //     mainAxisAlignment: MainAxisAlignment.center,
-              //     crossAxisAlignment: CrossAxisAlignment.start,
-              //     children: [
-              //       Column(
-              //         children: [
-              //           Row(
-              //             mainAxisAlignment: MainAxisAlignment.center,
-              //             children: [
-              //               Padding(
-              //                 padding: EdgeInsets.only(top: 1.v),
-              //                 child: Text(
-              //                   "Buy List",
-              //                   style: theme.textTheme.titleMedium,
-              //                 ),
-              //               ),
-              //               CustomImageView(
-              //                 svgPath: ImageConstant.imgInfo,
-              //                 height: 24.adaptSize,
-              //                 width: 24.adaptSize,
-              //                 margin: EdgeInsets.only(left: 5.h),
-              //               ),
-              //             ],
-              //           ),
-              //           SizedBox(height: 7.v),
-              //           SizedBox(
-              //             width: 118.h,
-              //             child: Divider(),
-              //           ),
-              //         ],
-              //       ),
-              //       Padding(
-              //         padding: EdgeInsets.only(
-              //           left: 30.h,
-              //           bottom: 11.v,
-              //         ),
-              //         child: Text(
-              //           "Sell List",
-              //           style: theme.textTheme.titleMedium,
-              //         ),
-              //       ),
-              //       CustomImageView(
-              //         svgPath: ImageConstant.imgInfo,
-              //         height: 24.adaptSize,
-              //         width: 24.adaptSize,
-              //         margin: EdgeInsets.only(
-              //           left: 7.h,
-              //           bottom: 11.v,
-              //         ),
-              //       ),
-              //       Spacer(),
-              //       CustomImageView(
-              //         svgPath: ImageConstant.imgPlus,
-              //         height: 24.adaptSize,
-              //         width: 24.adaptSize,
-              //         margin: EdgeInsets.only(bottom: 11.v),
-              //       ),
-              //     ],
-              //   ),
-              // ),
             ],
           ),
         ),
