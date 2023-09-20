@@ -21,18 +21,15 @@ class ImageConstant {
   // GroceryChecked images
   static String imgCheckmark = '$imagePath/img_checkmark.svg';
 
-  static String imgCheckmarkPrimary = '$imagePath/img_checkmark_primary.svg';
-
-  // GroceryUnchecked images
-  static String imgCheckboxoutlineblank =
-      '$imagePath/img_checkboxoutlineblank.svg';
-
-  // Common images
   static String imgOverflowmenu = '$imagePath/img_overflowmenu.svg';
 
-  static String imgArrowleft = '$imagePath/img_arrowleft.svg';
+  static String imgCheckmarkPrimary = '$imagePath/img_checkmark_primary.svg';
 
+  // GroceryTab images
   static String imgPlusPrimary = '$imagePath/img_plus_primary.svg';
+
+  // Common images
+  static String imgArrowleft = '$imagePath/img_arrowleft.svg';
 
   static String imageNotFound = 'assets/images/image_not_found.png';
 }

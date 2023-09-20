@@ -5,17 +5,15 @@ import 'package:listimator/widgets/app_bar/appbar_image.dart';
 import 'package:listimator/widgets/app_bar/appbar_title.dart';
 import 'package:listimator/widgets/app_bar/custom_app_bar.dart';
 
-class GrocerycheckedTabContainerScreen extends StatefulWidget {
-  const GrocerycheckedTabContainerScreen({Key? key}) : super(key: key);
+class GrocerytabScreen extends StatefulWidget {
+  const GrocerytabScreen({Key? key}) : super(key: key);
 
   @override
-  GrocerycheckedTabContainerScreenState createState() =>
-      GrocerycheckedTabContainerScreenState();
+  GrocerytabScreenState createState() => GrocerytabScreenState();
 }
 
 // ignore_for_file: must_be_immutable
-class GrocerycheckedTabContainerScreenState
-    extends State<GrocerycheckedTabContainerScreen>
+class GrocerytabScreenState extends State<GrocerytabScreen>
     with TickerProviderStateMixin {
   late TabController tabviewController;
 

@@ -22,12 +22,6 @@ class AppDecoration {
           width: 2.h,
         ),
       );
-  static BoxDecoration get outlineOnSecondary => BoxDecoration(
-        border: Border.all(
-          color: theme.colorScheme.onSecondary,
-          width: 2.h,
-        ),
-      );
 }
 
 class BorderRadiusStyle {

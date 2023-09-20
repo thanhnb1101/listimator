@@ -5,8 +5,8 @@ import 'package:listimator/widgets/app_bar/appbar_title.dart';
 import 'package:listimator/widgets/app_bar/custom_app_bar.dart';
 import 'package:listimator/widgets/custom_elevated_button.dart';
 
-class AdditemsScreen extends StatelessWidget {
-  const AdditemsScreen({Key? key}) : super(key: key);
+class AdditemScreen extends StatelessWidget {
+  const AdditemScreen({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

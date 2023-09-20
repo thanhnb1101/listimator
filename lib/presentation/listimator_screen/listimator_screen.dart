@@ -87,7 +87,7 @@ class ListimatorScreen extends StatelessWidget {
                     SizedBox(height: 20.v),
                     Text(
                       "Listimator",
-                      style: CustomTextStyles.headlineSmallSurfaceVariant,
+                      style: theme.textTheme.headlineSmall,
                     ),
                     Container(
                       width: 308.h,
@@ -99,7 +99,7 @@ class ListimatorScreen extends StatelessWidget {
                         "Avoid losing your money on unplanned\nitems.\nCreate a list before you buy or sell things on hold on to your hand earned money",
                         maxLines: 5,
                         overflow: TextOverflow.ellipsis,
-                        style: CustomTextStyles.bodyLargeSurfaceVariant,
+                        style: CustomTextStyles.bodyLarge17,
                       ),
                     ),
                   ],
@@ -123,8 +123,7 @@ class ListimatorScreen extends StatelessWidget {
                               padding: EdgeInsets.only(top: 1.v),
                               child: Text(
                                 "Buy List",
-                                style:
-                                    CustomTextStyles.titleMediumSurfaceVariant,
+                                style: theme.textTheme.titleMedium,
                               ),
                             ),
                             CustomImageView(
@@ -149,7 +148,7 @@ class ListimatorScreen extends StatelessWidget {
                       ),
                       child: Text(
                         "Sell List",
-                        style: CustomTextStyles.titleMediumSurfaceVariant,
+                        style: theme.textTheme.titleMedium,
                       ),
                     ),
                     CustomImageView(
@@ -181,7 +180,7 @@ class ListimatorScreen extends StatelessWidget {
                   horizontal: 26.h,
                   vertical: 23.v,
                 ),
-                decoration: AppDecoration.outlineOnSecondary.copyWith(
+                decoration: AppDecoration.outlineOnPrimaryContainer.copyWith(
                   borderRadius: BorderRadiusStyle.roundedBorder15,
                 ),
                 child: Column(
