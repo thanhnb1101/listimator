@@ -62,7 +62,11 @@ class GrocerytabScreenState extends State<GrocerytabScreen>
                                     CustomImageView(
                                         svgPath: ImageConstant.imgPlusPrimary,
                                         height: 40.adaptSize,
-                                        width: 40.adaptSize)
+                                        width: 40.adaptSize,
+                                        onTap: () {
+                                           Navigator.pushNamed(context, AppRoutes.additemScreen);
+                                        },
+                                        )
                                   ]))),
                       Container(
                           height: 33.v,

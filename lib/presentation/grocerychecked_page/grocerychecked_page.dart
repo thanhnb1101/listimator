@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:listimator/core/app_export.dart';
-import 'package:listimator/widgets/custom_checkbox_button.dart';
 import 'package:listimator/widgets/grocery_item.dart';
 import 'package:listimator/widgets/grocery_listview.dart';
 

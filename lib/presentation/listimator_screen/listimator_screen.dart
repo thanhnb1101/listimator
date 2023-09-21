@@ -1,11 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:listimator/core/app_export.dart';
+import 'package:listimator/core/utils/share_preference.dart';
 import 'package:listimator/widgets/listimator_listview.dart';
 import 'package:listimator/widgets/app_bar/appbar_image.dart';
 import 'package:listimator/widgets/app_bar/appbar_image_1.dart';
 import 'package:listimator/widgets/app_bar/appbar_image_2.dart';
 import 'package:listimator/widgets/app_bar/custom_app_bar.dart';
 import 'dart:developer' as dev;
+
+import 'package:shared_preferences/shared_preferences.dart';
 
 class ListimatorScreen extends StatefulWidget {
   const ListimatorScreen({Key? key})
@@ -20,10 +23,12 @@ class ListimatorScreen extends StatefulWidget {
 class ListimatorScreenState extends State<ListimatorScreen>
     with TickerProviderStateMixin {
   late TabController tabviewController;
+  
 
   @override
   void initState() {
     super.initState();
+    
     tabviewController = TabController(length: 2, vsync: this);
   }
 

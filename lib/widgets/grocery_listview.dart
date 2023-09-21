@@ -1,8 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:listimator/core/app_export.dart';
-import 'package:listimator/widgets/custom_button.dart';
-import 'package:listimator/widgets/custom_elevated_button.dart';
-import 'dart:developer' as dev;
 
 import 'package:listimator/widgets/grocery_item.dart';
 
@@ -29,10 +26,23 @@ class GroceryListViewState extends State<GroceryListView>
         itemName: "Chips", itemValue: "Rs 200", valueCheck: false);
     GroceryItemView salt = GroceryItemView(
         itemName: "Salts", itemValue: "Rs 90", valueCheck: true);
-        GroceryItemView salt2 = GroceryItemView(
+    GroceryItemView salt2 = GroceryItemView(
+        itemName: "Salts2", itemValue: "Rs 902", valueCheck: true);
+    GroceryItemView salt3 = GroceryItemView(
+        itemName: "Salts2", itemValue: "Rs 902", valueCheck: true);
+    GroceryItemView salt4 = GroceryItemView(
+        itemName: "Salts2", itemValue: "Rs 902", valueCheck: true);
+    GroceryItemView salt5 = GroceryItemView(
         itemName: "Salts2", itemValue: "Rs 902", valueCheck: true);
 
-    final List<GroceryItemView> items = [chips, salt, salt2];
+    final List<GroceryItemView> items = [
+      chips,
+      salt,
+      salt2,
+      salt3,
+      salt4,
+      salt5
+    ];
 
     return ListView.builder(
       itemCount: items.length,
